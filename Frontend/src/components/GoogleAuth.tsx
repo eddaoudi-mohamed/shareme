@@ -12,7 +12,7 @@ const GoogleAuth: FC<Iprops> = ({}) => {
   const navigate = useNavigate();
   return (
     <>
-      <GoogleOAuthProvider clientId="600641723035-310p1h725a8l0o0pmibvpv5c9ov0135s.apps.googleusercontent.com">
+      <GoogleOAuthProvider clientId="YOUR_CLIENT_ID">
         <GoogleLogin
           onSuccess={async (credentialResponse) => {
             localStorage.setItem("user", credentialResponse.credential || "");
